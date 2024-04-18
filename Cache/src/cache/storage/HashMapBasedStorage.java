@@ -13,7 +13,7 @@ public class HashMapBasedStorage<Key,Value> implements Storage<Key,Value>{
 
     public HashMapBasedStorage(Integer capacity) {
         this.capacity = capacity;
-        storage = new HashMap<>();
+           storage = new HashMap<>();
     }
 
     @Override

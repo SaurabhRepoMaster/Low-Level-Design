@@ -7,7 +7,7 @@ public class DoublyLinkedListNode<E> {
     E element;
 
     public DoublyLinkedListNode<E> getNext() {
-        return next;
+          return next;
     }
 
     public void setNext(DoublyLinkedListNode<E> next) {

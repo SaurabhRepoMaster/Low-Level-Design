@@ -12,7 +12,7 @@ public class CacheTest {
     Cache<Integer, Integer> cache;
 
     @BeforeEach
-    public void setup() {
+    public  void setup() {
         cache = new CacheFactory<Integer, Integer>().defaultCache(3);
     }
 

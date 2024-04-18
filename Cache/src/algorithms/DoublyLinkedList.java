@@ -4,7 +4,7 @@ import algorithms.exceptions.InvalidElementException;
 
 import java.util.NoSuchElementException;
 
-public class DoublyLinkedList<E> {
+public class  DoublyLinkedList<E> {
 
     DoublyLinkedListNode<E> dummyHead;
     DoublyLinkedListNode<E> dummyTail;

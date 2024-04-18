@@ -34,7 +34,7 @@ public class LRUEvictionPolicyTest {
     }
 
     @Test
-    void testReaccesingKeyPreventsItFromEviction() {
+    void  testReaccesingKeyPreventsItFromEviction() {
         lruEvictionPolicy.keyAccessed(1);
         lruEvictionPolicy.keyAccessed(2);
         lruEvictionPolicy.keyAccessed(3);
@@ -43,7 +43,7 @@ public class LRUEvictionPolicyTest {
         lruEvictionPolicy.keyAccessed(1);
         lruEvictionPolicy.keyAccessed(5);
         assertEquals(3, lruEvictionPolicy.evictKey());
-        assertEquals(2, lruEvictionPolicy.evictKey());
+        assertEquals( 2, lruEvictionPolicy.evictKey());
         assertEquals(4, lruEvictionPolicy.evictKey());
         assertEquals(1, lruEvictionPolicy.evictKey());
         assertEquals(5, lruEvictionPolicy.evictKey());

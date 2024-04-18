@@ -66,7 +66,7 @@ public class DoublyLinkedListTest {
         for (Integer expectedListElement : expectedListElements) {
             assertNotNull(currentNode);
             assertEquals(expectedListElement, currentNode.getElement());
-            currentNode = currentNode.getNext();
+              currentNode = currentNode.getNext();
         }
         assertNull(currentNode.getNext());
     }

@@ -24,7 +24,7 @@ public class LRUEvictionPolicy<Key> implements EvictionPolicy<Key>  {
         }
         else {
             DoublyLinkedListNode<Key> newNode = dll.addElementAtLast(key);
-            mapper.put(key, newNode);
+              mapper.put(key, newNode);
         }
     }
 
